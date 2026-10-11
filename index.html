@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Cool image gallery</h1>
+      <p>Keeping memories</p>
+      <!-- short tagline -->
+    </header>
+
+    <!-- FILTER BUTTONS -->
+    <nav class="filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="nature">Nature</button>
+      <button class="filter-btn" data-filter="workspace">Workspace</button>
+      <button class="filter-btn" data-filter="people">People</button>
+    </nav>
+
+    <!-- GALLERY GRID -->
+    <main class="gallery">
+      <figure class="item" data-category="workspace">
+        <img
+          src="images/img1.jpg"
+          alt="Executive office with a wooden desk, black leather chairs and a round hanging light"
+        />
+      </figure>
+
+      <figure class="item" data-category="nature">
+        <img
+          src="images/img2.jpg"
+          alt="Silhouettes of six people raising their arms toward a misty sunrise"
+        />
+      </figure>
+
+      <figure class="item" data-category="nature">
+        <img
+          src="images/img3.jpg"
+          alt="Snow-covered rocky mountain rising above a sea of clouds under a deep blue sky"
+        />
+      </figure>
+
+      <figure class="item" data-category="nature">
+        <img
+          src="images/img4.jpg"
+          alt="Jagged snowy mountain peak and glacier under a teal streaked sky"
+        />
+      </figure>
+
+      <figure class="item" data-category="nature">
+        <img
+          src="images/img5.jpg"
+          alt="Snowy mountain slope with rocky outcrops against a bright blue sky"
+        />
+      </figure>
+
+      <figure class="item" data-category="workspace">
+        <img
+          src="images/img6.jpg"
+          alt="Flat lay of a keyboard, round glasses, rose gold pens and a notebook on a white desk"
+        />
+      </figure>
+
+      <figure class="item" data-category="workspace">
+        <img
+          src="images/img7.jpg"
+          alt="Minimal wooden desk with a chair, white lamp and dried flowers in a vase"
+        />
+      </figure>
+
+      <figure class="item" data-category="workspace">
+        <img
+          src="images/img8.jpg"
+          alt="Open-plan office with hanging bulbs and people working at computers"
+        />
+      </figure>
+
+      <figure class="item" data-category="workspace">
+        <img
+          src="images/img9.jpg"
+          alt="Laptop on a long counter beside a tall plant and floor-to-ceiling windows"
+        />
+      </figure>
+
+      <figure class="item" data-category="workspace">
+        <img
+          src="images/img10.jpg"
+          alt="Empty modern office with long desks, black chairs and round ceiling lights"
+        />
+      </figure>
+
+      <figure class="item" data-category="people">
+        <img
+          src="images/img11.jpg"
+          alt="Four people working on laptops around a wooden table"
+        />
+      </figure>
+
+      <figure class="item" data-category="people">
+        <img
+          src="images/img12.jpg"
+          alt="Four smiling friends chatting around a table with a tablet and coffee"
+        />
+      </figure>
+
+      <figure class="item" data-category="people">
+        <img
+          src="images/img13.jpg"
+          alt="Person gesturing during a meeting with a laptop and notebook on the table"
+        />
+      </figure>
+
+      <figure class="item" data-category="nature">
+        <img
+          src="images/img14.jpg"
+          alt="Silhouettes of people cheering on a rocky summit at dusk"
+        />
+      </figure>
+
+      <figure class="item" data-category="people">
+        <img
+          src="images/img15.jpg"
+          alt="Five smiling friends sitting side by side on a ledge outdoors"
+        />
+      </figure>
+    </main>
+
+    <!-- LIGHTBOX (hidden by default, shown by JS later) -->
+    <div class="lightbox" id="lightbox">
+      <button class="lightbox-close" aria-label="Close">&times;</button>
+      <button class="lightbox-prev" aria-label="Previous">&#10094;</button>
+      <img class="lightbox-img" src="" alt="" />
+      <button class="lightbox-next" aria-label="Next">&#10095;</button>
+      <p class="lightbox-counter"></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
